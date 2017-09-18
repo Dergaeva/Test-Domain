@@ -1,0 +1,49 @@
+@import url("../twentyseventeen/rtl.css");
+
+html, body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/*Widget Search*/
+.widget_product_search input[type=submit] {
+	background-color: transparent;
+	color: #000;
+}
+input[type="search"]::-webkit-input-placeholder {
+	background: #000;
+	color: #fff;
+	padding: 3px;
+	font-size: 14px;
+}
+.woocommerce-product-rating .star-rating > span {
+	right: 0;
+}
+/*Widget images*/
+.woocommerce #content div.product div.images {
+	float: left;
+	padding-right: 15px;
+}
+.woocommerce-product-gallery .flex-control-thumbs li {
+	float: right;
+}
+.single-product .woocommerce-product-rating .star-rating {
+	float: right;
+}
+
+/*Widget Shopping*/
+.site-footer .widget .product_list_widget li a.remove,
+.widget .product_list_widget li a.remove {
+	float: left;
+}
+
+/*Footer*/
+.site-footer .site-info {
+	float: left;
+}
+@media screen and (max-width: 480px) {
+
+	.site-footer .site-info {
+		float: none;
+	}
+}

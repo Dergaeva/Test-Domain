@@ -1,0 +1,172 @@
+/*
+Theme Name:     Twentyseventeen Child
+Template:       twentyseventeen
+Description:    Дочерняя тема для темы Twentyseventeen
+Author:         Dergaeva Elena
+*/
+
+@import url("../twentyseventeen/style.css");
+
+/* Footer widgets */
+.site-footer .widget-area {
+	padding-bottom: 2em;
+	padding-top: 0;
+	width: 50%;
+	float: right;
+}
+.widget a, .site-footer .widget-area a {
+	box-shadow: none;
+}
+/* Site info */
+.site-info {
+	width: 50%;
+	float: left;
+}
+/*Contacts*/
+.contacts {
+	float: right;
+	text-align: left;
+	transition: all 0.3s ease-out;
+}
+.contacts span {
+	display: block;
+	font-size: 14px;
+	color: #000;
+	padding-bottom: 5px;
+}
+.contacts .button {
+	transition: all 0.3s ease-out;
+}
+.contacts span a {
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+}
+.contact-us {
+	border: 0;
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px;
+	cursor: pointer;
+}
+.contacts-mobile {
+	display: none;
+	text-align: left;
+	transition: all 0.3s ease-out;
+}
+.contacts-mobile span,
+.contacts-mobile .button {
+	display: flex;
+	text-align: center;
+	min-height: 35px;
+	border-radius: 0;
+	transition: all 0.3s ease-out;
+}
+.contacts-mobile span a,
+.contacts-mobile .button {
+	display: inline-block;
+	width: 100%;
+	font-size: 14px;
+	margin-bottom: 5px;
+	border: 0;
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.contacts .button:hover {
+	color: #ccc;
+	opacity: .7;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+	z-index: 11;
+}
+.popup {
+	margin: 20% auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+.popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.popup .close:hover {
+	color: #06D85F;
+}
+.popup .content {
+	max-height: 30%;
+	overflow: auto;
+}
+
+/*--------------------------------------------------------------
+ Media Queries
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 700px){
+	.box{
+		width: 70%;
+	}
+	.popup{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.contacts {
+		display: none;
+	}
+	.contacts-mobile {
+		display: block;
+	}
+	.contacts-mobile a {
+		font-weight: 700;
+	}
+	.site-footer .widget-area {
+		width: 100%;
+		padding-bottom: 1em;
+	}
+	.footer-widget-2 .widget {
+		padding-bottom: 0;
+	}
+	.site-info {
+		width: 100%;
+		float: none;
+	}
+}
+@media screen and (min-width: 48em) {
+
+	.site-info {
+		width: 50%;
+	}
+}
